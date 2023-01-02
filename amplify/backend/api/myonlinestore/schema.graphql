@@ -17,3 +17,4 @@ type Order @model{
 # Las relaciones en los esquemas deben darse especificando el tipo de relacion mediante estas directivas @hasOne, @hasMany, @belongsTo y @manyToMany
 # Las reglas de acceso se manejan con la directiva @auth y se indica el tipo de objeto (usuario o grupo) y los pemisos que tiene.
 # Si hay relacion debe identificar el campo que es la llave primaria.
+# El proceso puede tardar unos minutos pues despliega los servicios necesario y construye la plataforma para desplegar nuestra aplicacion
