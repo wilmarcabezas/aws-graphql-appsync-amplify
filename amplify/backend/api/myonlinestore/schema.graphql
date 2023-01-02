@@ -10,7 +10,10 @@ type Book @model @auth(
 }
 
 type Order @model{
-  id: ID!
+  id: ID! @primaryKey
   books: [Book] @hasMany
   total: Float!
 }
+# Las relaciones en los esquemas deben darse especificando el tipo de relacion mediante estas directivas @hasOne, @hasMany, @belongsTo y @manyToMany
+# Las reglas de acceso se manejan con la directiva @auth y se indica el tipo de objeto (usuario o grupo) y los pemisos que tiene.
+# Si hay relacion debe identificar el campo que es la llave primaria.
