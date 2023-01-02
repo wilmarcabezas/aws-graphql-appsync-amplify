@@ -1,0 +1,16 @@
+type Book @model @auth(
+  rules: [
+  { allow: groups, groups: [ "admin" ] },
+  { allow: groups, groups: [ "user" ], operations: [ read ] }
+  ]) {
+  id: ID! @primaryKey
+  description: String
+  price: Float!
+  author: String!
+}
+
+type Order @model{
+  id: ID!
+  books: [Book] @hasMany
+  total: Float!
+}
