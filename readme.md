@@ -60,7 +60,7 @@ type Book @model @auth(
 * @model: Indica que este tipo es un modelo de base de datos.
 * @auth: Especifica las reglas de autenticación para este tipo. En este caso, solo los usuarios pertenecientes a los grupos admin o user pueden acceder a la lectura de los libros.
 
-##Tipo Order
+## Tipo `Order`
 
 Este tipo representa una orden de compra de libros.
 
